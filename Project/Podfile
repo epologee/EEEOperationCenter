@@ -1,0 +1,7 @@
+pod "EEEOperationCenter", :path => "../EEEOperationCenter.podspec"
+
+target "EEEOperationCenter" do
+end
+
+target "EEEOperationCenterTests" do
+end
