@@ -1,0 +1,24 @@
+PODS:
+  - EEEInjector (0.1.0)
+  - EEEOperationCenter (0.1.0):
+    - EEEInjector (~> 0.1)
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+
+DEPENDENCIES:
+  - EEEOperationCenter (from `../EEEOperationCenter.podspec`)
+  - Kiwi/XCTest
+
+EXTERNAL SOURCES:
+  EEEOperationCenter:
+    :path: ../EEEOperationCenter.podspec
+
+SPEC CHECKSUMS:
+  EEEInjector: f987b9ee00affd1775e968a7d7862259a4d114e9
+  EEEOperationCenter: af4968b0f6f46a26d1d7384fc60e6d840648cbae
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+
+COCOAPODS: 0.29.0

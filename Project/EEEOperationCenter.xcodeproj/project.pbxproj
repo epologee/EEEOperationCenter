@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0B394FF05D45ECB565397C /* libPods-EEEOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EBAEF3D7F54AD6B611C618 /* libPods-EEEOperationCenter.a */; };
+		865818EBA62340588A73DBF4 /* libPods-EEEOperationCenterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E2EA1C6F634B6FB9335E42 /* libPods-EEEOperationCenterTests.a */; };
 		958D9A2A18A3D4D8008AA0E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A2918A3D4D8008AA0E3 /* Foundation.framework */; };
 		958D9A3818A3D4D8008AA0E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A3718A3D4D8008AA0E3 /* XCTest.framework */; };
 		958D9A3918A3D4D8008AA0E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A2918A3D4D8008AA0E3 /* Foundation.framework */; };
@@ -14,6 +16,7 @@
 		958D9A3E18A3D4D8008AA0E3 /* libEEEOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A2618A3D4D8008AA0E3 /* libEEEOperationCenter.a */; };
 		958D9A4418A3D4D8008AA0E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 958D9A4218A3D4D8008AA0E3 /* InfoPlist.strings */; };
 		958D9A4618A3D4D8008AA0E3 /* EEEOperationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */; };
+		E42076E94EA37FAFCEEC6909 /* EEEOperationCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420749DC189F5B805FE8C2D /* EEEOperationCenterSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38EBAEF3D7F54AD6B611C618 /* libPods-EEEOperationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEOperationCenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD6F88212048F1BDCC6FDB /* Pods-EEEOperationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEEOperationCenter.xcconfig"; path = "Pods/Pods-EEEOperationCenter.xcconfig"; sourceTree = "<group>"; };
 		958D9A2618A3D4D8008AA0E3 /* libEEEOperationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEEEOperationCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		958D9A2918A3D4D8008AA0E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		958D9A2D18A3D4D8008AA0E3 /* EEEOperationCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEEOperationCenter-Prefix.pch"; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		958D9A4118A3D4D8008AA0E3 /* EEEOperationCenterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EEEOperationCenterTests-Info.plist"; sourceTree = "<group>"; };
 		958D9A4318A3D4D8008AA0E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterTests.m; sourceTree = "<group>"; };
+		D9E2EA1C6F634B6FB9335E42 /* libPods-EEEOperationCenterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEOperationCenterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E420749DC189F5B805FE8C2D /* EEEOperationCenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterSpec.m; sourceTree = "<group>"; };
+		FCBBC7ADDD164333BF487326 /* Pods-EEEOperationCenterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEEOperationCenterTests.xcconfig"; path = "Pods/Pods-EEEOperationCenterTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				958D9A2A18A3D4D8008AA0E3 /* Foundation.framework in Frameworks */,
+				3E0B394FF05D45ECB565397C /* libPods-EEEOperationCenter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +76,7 @@
 				958D9A3B18A3D4D8008AA0E3 /* UIKit.framework in Frameworks */,
 				958D9A3E18A3D4D8008AA0E3 /* libEEEOperationCenter.a in Frameworks */,
 				958D9A3918A3D4D8008AA0E3 /* Foundation.framework in Frameworks */,
+				865818EBA62340588A73DBF4 /* libPods-EEEOperationCenterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,8 @@
 				958D9A3F18A3D4D8008AA0E3 /* EEEOperationCenterTests */,
 				958D9A2818A3D4D8008AA0E3 /* Frameworks */,
 				958D9A2718A3D4D8008AA0E3 /* Products */,
+				84BD6F88212048F1BDCC6FDB /* Pods-EEEOperationCenter.xcconfig */,
+				FCBBC7ADDD164333BF487326 /* Pods-EEEOperationCenterTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +110,8 @@
 				958D9A2918A3D4D8008AA0E3 /* Foundation.framework */,
 				958D9A3718A3D4D8008AA0E3 /* XCTest.framework */,
 				958D9A3A18A3D4D8008AA0E3 /* UIKit.framework */,
+				38EBAEF3D7F54AD6B611C618 /* libPods-EEEOperationCenter.a */,
+				D9E2EA1C6F634B6FB9335E42 /* libPods-EEEOperationCenterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +137,7 @@
 			children = (
 				958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */,
 				958D9A4018A3D4D8008AA0E3 /* Supporting Files */,
+				E42075A2CCE20C4C5EEAA663 /* Specs */,
 			);
 			path = EEEOperationCenterTests;
 			sourceTree = "<group>";
@@ -136,6 +151,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E42075A2CCE20C4C5EEAA663 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				E420749DC189F5B805FE8C2D /* EEEOperationCenterSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 958D9A4918A3D4D8008AA0E3 /* Build configuration list for PBXNativeTarget "EEEOperationCenter" */;
 			buildPhases = (
+				0AB4EF2F5D29420D937E3A45 /* Check Pods Manifest.lock */,
 				958D9A2218A3D4D8008AA0E3 /* Sources */,
 				958D9A2318A3D4D8008AA0E3 /* Frameworks */,
 				958D9A2418A3D4D8008AA0E3 /* CopyFiles */,
+				A23022EA9E854084A4F2AB8D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 958D9A4C18A3D4D8008AA0E3 /* Build configuration list for PBXNativeTarget "EEEOperationCenterTests" */;
 			buildPhases = (
+				1270842D3B014EC096284032 /* Check Pods Manifest.lock */,
 				958D9A3218A3D4D8008AA0E3 /* Sources */,
 				958D9A3318A3D4D8008AA0E3 /* Frameworks */,
 				958D9A3418A3D4D8008AA0E3 /* Resources */,
+				E535FB158FAF4DCC84F597AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +239,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AB4EF2F5D29420D937E3A45 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1270842D3B014EC096284032 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A23022EA9E854084A4F2AB8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-EEEOperationCenter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E535FB158FAF4DCC84F597AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-EEEOperationCenterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		958D9A2218A3D4D8008AA0E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				958D9A4618A3D4D8008AA0E3 /* EEEOperationCenterTests.m in Sources */,
+				E42076E94EA37FAFCEEC6909 /* EEEOperationCenterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +345,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -292,7 +382,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -322,11 +411,11 @@
 		};
 		958D9A4A18A3D4D8008AA0E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BD6F88212048F1BDCC6FDB /* Pods-EEEOperationCenter.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/EEEOperationCenter.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EEEOperationCenter/EEEOperationCenter-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -334,11 +423,11 @@
 		};
 		958D9A4B18A3D4D8008AA0E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BD6F88212048F1BDCC6FDB /* Pods-EEEOperationCenter.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/EEEOperationCenter.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EEEOperationCenter/EEEOperationCenter-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -346,8 +435,8 @@
 		};
 		958D9A4D18A3D4D8008AA0E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBBC7ADDD164333BF487326 /* Pods-EEEOperationCenterTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -355,10 +444,6 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EEEOperationCenter/EEEOperationCenter-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = "EEEOperationCenterTests/EEEOperationCenterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -367,8 +452,8 @@
 		};
 		958D9A4E18A3D4D8008AA0E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBBC7ADDD164333BF487326 /* Pods-EEEOperationCenterTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
