@@ -7,8 +7,6 @@
 
 To run the example project; clone the repo, and run `pod install` from the Project directory first.
 
-## Requirements
-
 ## Installation
 
 EEEOperationCenter is available through [CocoaPods](http://cocoapods.org), to install
@@ -23,4 +21,3 @@ Eric-Paul Lecluse, http://epologee.com
 ## License
 
 This is free and unencumbered software released into the public domain. See the LICENSE file for more info.
-
