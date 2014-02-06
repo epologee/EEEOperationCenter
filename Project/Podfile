@@ -1,3 +1,5 @@
+platform :ios, '7.0'
+
 target "EEEOperationCenter" do
   pod "EEEOperationCenter", :path => "../EEEOperationCenter.podspec"
 end
