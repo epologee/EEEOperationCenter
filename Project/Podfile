@@ -1,7 +1,7 @@
-pod "EEEOperationCenter", :path => "../EEEOperationCenter.podspec"
-
 target "EEEOperationCenter" do
+  pod "EEEOperationCenter", :path => "../EEEOperationCenter.podspec"
 end
 
 target "EEEOperationCenterTests" do
+  pod "Kiwi/XCTest"
 end
