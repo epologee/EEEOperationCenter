@@ -28,7 +28,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTFail(@"No tests, this is actually pretty embarrassing... \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
