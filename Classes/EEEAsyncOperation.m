@@ -17,10 +17,6 @@ NSTimeInterval const EEENever = 0;
 
 @implementation EEEAsyncOperation
 
-- (void)dealloc
-{
-}
-
 - (id)initWithFeedback:(EEEFeedbackBlock)feedbackBlock
 {
     self = [super init];
@@ -139,6 +135,9 @@ NSTimeInterval const EEENever = 0;
 
 - (void)dispatchFeedback:(EEEFeedbackBlock)feedback withSuccess:(BOOL)success context:(id)context error:(NSError *)error
 {
+    NSParameterAssert(self.executing || self.isCancelled);
+    NSParameterAssert(!self.finished);
+
     if (self.isCancelled)
     {
         error = [NSError eee_operationCenterErrorWithCode:EEEOperationCenterErrorCodeCancelled description:@"Async operation was cancelled during execution."];
