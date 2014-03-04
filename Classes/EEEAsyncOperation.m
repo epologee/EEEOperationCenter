@@ -119,8 +119,7 @@ NSTimeInterval const EEENever = 0;
     *   You must make these changes even if the operation was cancelled before it started executing."
     */
 
-    self.finished = YES;
-    self.executing = NO;
+    [self dispatchUnsuccessfulFeedbackWithError:nil];
 }
 
 - (void)dispatchSuccessfulFeedbackWithOptionalContext:(id)context
@@ -135,7 +134,6 @@ NSTimeInterval const EEENever = 0;
 
 - (void)dispatchFeedback:(EEEFeedbackBlock)feedback withSuccess:(BOOL)success context:(id)context error:(NSError *)error
 {
-    NSParameterAssert(self.executing || self.isCancelled);
     NSParameterAssert(!self.finished);
 
     if (self.isCancelled)
