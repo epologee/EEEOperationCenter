@@ -134,7 +134,7 @@ NSTimeInterval const EEENever = 0;
 
 - (void)dispatchFeedback:(EEEFeedbackBlock)feedback withSuccess:(BOOL)success context:(id)context error:(NSError *)error
 {
-    NSParameterAssert(!self.finished);
+    NSParameterAssert(!self.finished || self.isInline);
 
     if (self.isCancelled)
     {
