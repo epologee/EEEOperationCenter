@@ -88,7 +88,7 @@ NSTimeInterval const EEENever = 0;
     [self didChangeValueForKey:@"isFinished"];
 }
 
-- (instancetype)inline
+- (instancetype)operate
 {
     NSParameterAssert([EEEOperationCenter currentOperationCenter]);
     [[EEEOperationCenter currentOperationCenter] inlineOperation:self withTimeout:self.timeout];

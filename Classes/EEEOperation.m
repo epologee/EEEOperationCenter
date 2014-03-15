@@ -25,6 +25,11 @@
 
 - (instancetype)inline
 {
+    return [self operate];
+}
+
+- (instancetype)operate
+{
     NSParameterAssert([EEEOperationCenter currentOperationCenter]);
     [[EEEOperationCenter currentOperationCenter] inlineOperation:self withTimeout:0];
     return self;
