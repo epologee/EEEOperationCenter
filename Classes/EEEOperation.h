@@ -15,7 +15,8 @@
 
 - (instancetype)queue;
 
-- (instancetype)inline;
+- (instancetype)inline DEPRECATED_ATTRIBUTE; // use operate `instead`
+- (instancetype)operate;
 
 - (void)execute OVERRIDE_ATTRIBUTE;
 
