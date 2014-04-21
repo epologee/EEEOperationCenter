@@ -1,8 +1,14 @@
 #import "EEEInjector.h"
 #import "EEEOperation.h"
 #import "EEEOperationCenter.h"
+#import "NSObject+EEELazyInjection.h"
 
 @implementation EEEOperation
+
++ (void)initialize
+{
+    [self eee_setupLazyInjectionForDynamicProperties];
+}
 
 - (id)init
 {

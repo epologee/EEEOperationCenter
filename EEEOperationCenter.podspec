@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EEEOperationCenter"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "Say 'no' to God-classes, chop them up with the operation center"
   s.homepage         = "https://github.com/epologee/EEEOperationCenter"
   s.license          = 'MIT'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes/**/*.{h,m}'
+  s.source_files = 'Classes/*.{h,m}'
   s.frameworks = 'Foundation'
-  s.dependency 'EEEInjector', '~> 0.1'
+  s.dependency 'EEEInjector', '~> 0.2'
 end
