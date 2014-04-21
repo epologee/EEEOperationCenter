@@ -5,6 +5,8 @@
 
 @interface EEEOperationCenter : NSObject
 
+@property(nonatomic, strong) NSOperationQueue *mainCommandQueue;
+@property(nonatomic, strong) NSOperationQueue *backgroundCommandQueue;
 @property NSInteger maxConcurrentOperationCount;
 
 + (EEEOperationCenter *)currentOperationCenter;
