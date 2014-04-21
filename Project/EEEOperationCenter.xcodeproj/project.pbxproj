@@ -15,7 +15,6 @@
 		958D9A3B18A3D4D8008AA0E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A3A18A3D4D8008AA0E3 /* UIKit.framework */; };
 		958D9A3E18A3D4D8008AA0E3 /* libEEEOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D9A2618A3D4D8008AA0E3 /* libEEEOperationCenter.a */; };
 		958D9A4418A3D4D8008AA0E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 958D9A4218A3D4D8008AA0E3 /* InfoPlist.strings */; };
-		958D9A4618A3D4D8008AA0E3 /* EEEOperationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */; };
 		E42076E94EA37FAFCEEC6909 /* EEEOperationCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420749DC189F5B805FE8C2D /* EEEOperationCenterSpec.m */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		958D9A3A18A3D4D8008AA0E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		958D9A4118A3D4D8008AA0E3 /* EEEOperationCenterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EEEOperationCenterTests-Info.plist"; sourceTree = "<group>"; };
 		958D9A4318A3D4D8008AA0E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterTests.m; sourceTree = "<group>"; };
 		D9E2EA1C6F634B6FB9335E42 /* libPods-EEEOperationCenterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEOperationCenterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E420749DC189F5B805FE8C2D /* EEEOperationCenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterSpec.m; sourceTree = "<group>"; };
 		FCBBC7ADDD164333BF487326 /* Pods-EEEOperationCenterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEEOperationCenterTests.xcconfig"; path = "Pods/Pods-EEEOperationCenterTests.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		958D9A3F18A3D4D8008AA0E3 /* EEEOperationCenterTests */ = {
 			isa = PBXGroup;
 			children = (
-				958D9A4518A3D4D8008AA0E3 /* EEEOperationCenterTests.m */,
 				958D9A4018A3D4D8008AA0E3 /* Supporting Files */,
 				E42075A2CCE20C4C5EEAA663 /* Specs */,
 			);
@@ -314,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958D9A4618A3D4D8008AA0E3 /* EEEOperationCenterTests.m in Sources */,
 				E42076E94EA37FAFCEEC6909 /* EEEOperationCenterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
