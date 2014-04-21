@@ -1,11 +1,3 @@
-//
-//  EEEOperationCenterSpec.m
-//  OperationCenter
-//
-//  Created by Eric-Paul Lecluse on 21-04-14.
-//  Copyright 2014 epologee. All rights reserved.
-//
-
 #import <Kiwi/Kiwi.h>
 #import "EEEOperationCenter.h"
 #import "EEEOperation.h"
@@ -59,7 +51,7 @@ SPEC_BEGIN(EEEOperationCenterSpec)
                     [sut queueOperation:mockOperation];
                 });
             });
-            
+
             describe(@"without injector", ^{
                 __block EEEOperationCenter *sut;
 

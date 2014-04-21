@@ -1,7 +1,8 @@
 platform :ios, '7.0'
 
 target "OperationCenter", :exclusive => true do
-  pod "EEEOperationCenter", :path => "../"
+  pod "EEEInjector"
+  # pod "EEEOperationCenter", :path => "../"
 end
 
 target "OperationCenterTests", :exclusive => true do
