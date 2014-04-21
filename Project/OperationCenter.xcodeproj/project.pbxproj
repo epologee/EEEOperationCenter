@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437568FFD29042579D419CE3 /* libPods-OperationCenterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D916A5977E4E49966E205A /* libPods-OperationCenterTests.a */; };
+		4D02C4AD4C244032A14549C7 /* libPods-OperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2168BA65AA704A6885117108 /* libPods-OperationCenter.a */; };
+		95054A7D19054433000B1B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95054A7C19054433000B1B53 /* Foundation.framework */; };
+		95054A8B19054433000B1B53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95054A8A19054433000B1B53 /* XCTest.framework */; };
+		95054A8C19054433000B1B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95054A7C19054433000B1B53 /* Foundation.framework */; };
+		95054A8E19054433000B1B53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95054A8D19054433000B1B53 /* UIKit.framework */; };
+		95054A9119054433000B1B53 /* libOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95054A7919054433000B1B53 /* libOperationCenter.a */; };
+		95054A9719054433000B1B53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95054A9519054433000B1B53 /* InfoPlist.strings */; };
+		950635A519054D3B00EFDD62 /* EEEAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9506359E19054D3B00EFDD62 /* EEEAsyncOperation.m */; };
+		950635A619054D3B00EFDD62 /* EEEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A019054D3B00EFDD62 /* EEEOperation.m */; };
+		950635A719054D3B00EFDD62 /* EEEOperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A219054D3B00EFDD62 /* EEEOperationCenter.m */; };
+		950635A819054D3B00EFDD62 /* NSError+EEEOperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A419054D3B00EFDD62 /* NSError+EEEOperationCenter.m */; };
+		E42075D269D1D7D254EC30D4 /* EEEOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207ED03F84384F64874B57 /* EEEOperationSpec.m */; };
+		E4207C07FFB4E89C4B59C63C /* TSTLazyPropertiesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */; };
+		E4207C44BF7FC1294B417F65 /* EEEOperationCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95054A8F19054433000B1B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95054A7119054433000B1B53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95054A7819054433000B1B53;
+			remoteInfo = OperationCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95054A7719054433000B1B53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2168BA65AA704A6885117108 /* libPods-OperationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OperationCenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D916A5977E4E49966E205A /* libPods-OperationCenterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OperationCenterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D1476D70474FDBBA9F6553 /* Pods-OperationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OperationCenter.xcconfig"; path = "Pods/Pods-OperationCenter.xcconfig"; sourceTree = "<group>"; };
+		95054A7919054433000B1B53 /* libOperationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOperationCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95054A7C19054433000B1B53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95054A8019054433000B1B53 /* OperationCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OperationCenter-Prefix.pch"; sourceTree = "<group>"; };
+		95054A8919054433000B1B53 /* OperationCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OperationCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95054A8A19054433000B1B53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		95054A8D19054433000B1B53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		95054A9419054433000B1B53 /* OperationCenterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OperationCenterTests-Info.plist"; sourceTree = "<group>"; };
+		95054A9619054433000B1B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9506359D19054D3B00EFDD62 /* EEEAsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEAsyncOperation.h; sourceTree = "<group>"; };
+		9506359E19054D3B00EFDD62 /* EEEAsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEAsyncOperation.m; sourceTree = "<group>"; };
+		9506359F19054D3B00EFDD62 /* EEEOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEOperation.h; sourceTree = "<group>"; };
+		950635A019054D3B00EFDD62 /* EEEOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperation.m; sourceTree = "<group>"; };
+		950635A119054D3B00EFDD62 /* EEEOperationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEEOperationCenter.h; sourceTree = "<group>"; };
+		950635A219054D3B00EFDD62 /* EEEOperationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenter.m; sourceTree = "<group>"; };
+		950635A319054D3B00EFDD62 /* NSError+EEEOperationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+EEEOperationCenter.h"; sourceTree = "<group>"; };
+		950635A419054D3B00EFDD62 /* NSError+EEEOperationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+EEEOperationCenter.m"; sourceTree = "<group>"; };
+		AA6EC415E52B4B66BBFED6FE /* Pods-OperationCenterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OperationCenterTests.xcconfig"; path = "Pods/Pods-OperationCenterTests.xcconfig"; sourceTree = "<group>"; };
+		E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTLazyPropertiesOperation.m; sourceTree = "<group>"; };
+		E4207696EC2057DC04B393F1 /* TSTLazyPropertiesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTLazyPropertiesOperation.h; sourceTree = "<group>"; };
+		E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterSpec.m; sourceTree = "<group>"; };
+		E4207ED03F84384F64874B57 /* EEEOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationSpec.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95054A7619054433000B1B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95054A7D19054433000B1B53 /* Foundation.framework in Frameworks */,
+				4D02C4AD4C244032A14549C7 /* libPods-OperationCenter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95054A8619054433000B1B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95054A9119054433000B1B53 /* libOperationCenter.a in Frameworks */,
+				95054A8B19054433000B1B53 /* XCTest.framework in Frameworks */,
+				95054A8E19054433000B1B53 /* UIKit.framework in Frameworks */,
+				95054A8C19054433000B1B53 /* Foundation.framework in Frameworks */,
+				437568FFD29042579D419CE3 /* libPods-OperationCenterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95054A7019054433000B1B53 = {
+			isa = PBXGroup;
+			children = (
+				95054A7E19054433000B1B53 /* OperationCenter */,
+				95054A9219054433000B1B53 /* OperationCenterTests */,
+				95054A7B19054433000B1B53 /* Frameworks */,
+				95054A7A19054433000B1B53 /* Products */,
+				78D1476D70474FDBBA9F6553 /* Pods-OperationCenter.xcconfig */,
+				AA6EC415E52B4B66BBFED6FE /* Pods-OperationCenterTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		95054A7A19054433000B1B53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95054A7919054433000B1B53 /* libOperationCenter.a */,
+				95054A8919054433000B1B53 /* OperationCenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95054A7B19054433000B1B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95054A7C19054433000B1B53 /* Foundation.framework */,
+				95054A8A19054433000B1B53 /* XCTest.framework */,
+				95054A8D19054433000B1B53 /* UIKit.framework */,
+				2168BA65AA704A6885117108 /* libPods-OperationCenter.a */,
+				50D916A5977E4E49966E205A /* libPods-OperationCenterTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95054A7E19054433000B1B53 /* OperationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				9506359C19054D3B00EFDD62 /* Classes */,
+				95054A7F19054433000B1B53 /* Supporting Files */,
+			);
+			path = OperationCenter;
+			sourceTree = "<group>";
+		};
+		95054A7F19054433000B1B53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95054A8019054433000B1B53 /* OperationCenter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95054A9219054433000B1B53 /* OperationCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				95054A9319054433000B1B53 /* Supporting Files */,
+				E4207EB870A556C9A75B50EA /* Specs */,
+				E4207B918E2B2F54F97B9D47 /* Helpers */,
+			);
+			path = OperationCenterTests;
+			sourceTree = "<group>";
+		};
+		95054A9319054433000B1B53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95054A9419054433000B1B53 /* OperationCenterTests-Info.plist */,
+				95054A9519054433000B1B53 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9506359C19054D3B00EFDD62 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9506359D19054D3B00EFDD62 /* EEEAsyncOperation.h */,
+				9506359E19054D3B00EFDD62 /* EEEAsyncOperation.m */,
+				9506359F19054D3B00EFDD62 /* EEEOperation.h */,
+				950635A019054D3B00EFDD62 /* EEEOperation.m */,
+				950635A119054D3B00EFDD62 /* EEEOperationCenter.h */,
+				950635A219054D3B00EFDD62 /* EEEOperationCenter.m */,
+				950635A319054D3B00EFDD62 /* NSError+EEEOperationCenter.h */,
+				950635A419054D3B00EFDD62 /* NSError+EEEOperationCenter.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		E4207B918E2B2F54F97B9D47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */,
+				E4207696EC2057DC04B393F1 /* TSTLazyPropertiesOperation.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E4207EB870A556C9A75B50EA /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */,
+				E4207ED03F84384F64874B57 /* EEEOperationSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95054A7819054433000B1B53 /* OperationCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95054A9C19054433000B1B53 /* Build configuration list for PBXNativeTarget "OperationCenter" */;
+			buildPhases = (
+				317A4232473F43E98C026521 /* Check Pods Manifest.lock */,
+				95054A7519054433000B1B53 /* Sources */,
+				95054A7619054433000B1B53 /* Frameworks */,
+				95054A7719054433000B1B53 /* CopyFiles */,
+				0E6F0FE79E444E758DA1CCDA /* Copy Pods Resources */,
+				9506358F19054BA300EFDD62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OperationCenter;
+			productName = OperationCenter;
+			productReference = 95054A7919054433000B1B53 /* libOperationCenter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95054A8819054433000B1B53 /* OperationCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95054A9F19054433000B1B53 /* Build configuration list for PBXNativeTarget "OperationCenterTests" */;
+			buildPhases = (
+				D066EF3DA1B14D38970ACEC9 /* Check Pods Manifest.lock */,
+				95054A8519054433000B1B53 /* Sources */,
+				95054A8619054433000B1B53 /* Frameworks */,
+				95054A8719054433000B1B53 /* Resources */,
+				5B79EE5A5A434CCB80AD516F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95054A9019054433000B1B53 /* PBXTargetDependency */,
+			);
+			name = OperationCenterTests;
+			productName = OperationCenterTests;
+			productReference = 95054A8919054433000B1B53 /* OperationCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95054A7119054433000B1B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = epologee;
+			};
+			buildConfigurationList = 95054A7419054433000B1B53 /* Build configuration list for PBXProject "OperationCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95054A7019054433000B1B53;
+			productRefGroup = 95054A7A19054433000B1B53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95054A7819054433000B1B53 /* OperationCenter */,
+				95054A8819054433000B1B53 /* OperationCenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95054A8719054433000B1B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95054A9719054433000B1B53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E6F0FE79E444E758DA1CCDA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-OperationCenter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317A4232473F43E98C026521 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B79EE5A5A434CCB80AD516F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-OperationCenterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9506358F19054BA300EFDD62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = XcodeCoverage/exportenv.sh;
+		};
+		D066EF3DA1B14D38970ACEC9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95054A7519054433000B1B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950635A719054D3B00EFDD62 /* EEEOperationCenter.m in Sources */,
+				950635A519054D3B00EFDD62 /* EEEAsyncOperation.m in Sources */,
+				950635A619054D3B00EFDD62 /* EEEOperation.m in Sources */,
+				950635A819054D3B00EFDD62 /* NSError+EEEOperationCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95054A8519054433000B1B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4207C44BF7FC1294B417F65 /* EEEOperationCenterSpec.m in Sources */,
+				E42075D269D1D7D254EC30D4 /* EEEOperationSpec.m in Sources */,
+				E4207C07FFB4E89C4B59C63C /* TSTLazyPropertiesOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95054A9019054433000B1B53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95054A7819054433000B1B53 /* OperationCenter */;
+			targetProxy = 95054A8F19054433000B1B53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95054A9519054433000B1B53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95054A9619054433000B1B53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95054A9A19054433000B1B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95054A9B19054433000B1B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95054A9D19054433000B1B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D1476D70474FDBBA9F6553 /* Pods-OperationCenter.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/OperationCenter.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OperationCenter/OperationCenter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95054A9E19054433000B1B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D1476D70474FDBBA9F6553 /* Pods-OperationCenter.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/OperationCenter.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OperationCenter/OperationCenter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		95054AA019054433000B1B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6EC415E52B4B66BBFED6FE /* Pods-OperationCenterTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OperationCenter/OperationCenter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OperationCenterTests/OperationCenterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		95054AA119054433000B1B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6EC415E52B4B66BBFED6FE /* Pods-OperationCenterTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OperationCenter/OperationCenter-Prefix.pch";
+				INFOPLIST_FILE = "OperationCenterTests/OperationCenterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95054A7419054433000B1B53 /* Build configuration list for PBXProject "OperationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95054A9A19054433000B1B53 /* Debug */,
+				95054A9B19054433000B1B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95054A9C19054433000B1B53 /* Build configuration list for PBXNativeTarget "OperationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95054A9D19054433000B1B53 /* Debug */,
+				95054A9E19054433000B1B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95054A9F19054433000B1B53 /* Build configuration list for PBXNativeTarget "OperationCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95054AA019054433000B1B53 /* Debug */,
+				95054AA119054433000B1B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95054A7119054433000B1B53 /* Project object */;
+}

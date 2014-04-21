@@ -4,8 +4,6 @@
 @interface EEEOperationCenter ()
 
 @property(nonatomic, strong) EEEInjector *injector;
-@property(nonatomic, strong) NSOperationQueue *backgroundCommandQueue;
-@property(nonatomic, strong) NSOperationQueue *mainCommandQueue;
 
 @end
 
@@ -26,6 +24,12 @@ static EEEOperationCenter *_currentOperationCenter = nil;
     }
 
     return _currentOperationCenter;
+}
+
+- (id)init
+{
+    self = [self initWithInjector:nil];
+    return self;
 }
 
 - (id)initWithInjector:(EEEInjector *)injector
@@ -55,7 +59,10 @@ static EEEOperationCenter *_currentOperationCenter = nil;
 
 - (id)queueOperation:(EEEOperation *)operation
 {
-    operation.injector = self.injector;
+    if (self.injector)
+    {
+        operation.injector = self.injector;
+    }
 
     if (operation.requiresMainThread)
     {
