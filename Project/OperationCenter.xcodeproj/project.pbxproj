@@ -19,6 +19,8 @@
 		950635A619054D3B00EFDD62 /* EEEOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A019054D3B00EFDD62 /* EEEOperation.m */; };
 		950635A719054D3B00EFDD62 /* EEEOperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A219054D3B00EFDD62 /* EEEOperationCenter.m */; };
 		950635A819054D3B00EFDD62 /* NSError+EEEOperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950635A419054D3B00EFDD62 /* NSError+EEEOperationCenter.m */; };
+		E42075D269D1D7D254EC30D4 /* EEEOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207ED03F84384F64874B57 /* EEEOperationSpec.m */; };
+		E4207C07FFB4E89C4B59C63C /* TSTLazyPropertiesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */; };
 		E4207C44BF7FC1294B417F65 /* EEEOperationCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +67,10 @@
 		950635A319054D3B00EFDD62 /* NSError+EEEOperationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+EEEOperationCenter.h"; sourceTree = "<group>"; };
 		950635A419054D3B00EFDD62 /* NSError+EEEOperationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+EEEOperationCenter.m"; sourceTree = "<group>"; };
 		AA6EC415E52B4B66BBFED6FE /* Pods-OperationCenterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OperationCenterTests.xcconfig"; path = "Pods/Pods-OperationCenterTests.xcconfig"; sourceTree = "<group>"; };
+		E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTLazyPropertiesOperation.m; sourceTree = "<group>"; };
+		E4207696EC2057DC04B393F1 /* TSTLazyPropertiesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTLazyPropertiesOperation.h; sourceTree = "<group>"; };
 		E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationCenterSpec.m; sourceTree = "<group>"; };
+		E4207ED03F84384F64874B57 /* EEEOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEOperationSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,7 @@
 			children = (
 				95054A9319054433000B1B53 /* Supporting Files */,
 				E4207EB870A556C9A75B50EA /* Specs */,
+				E4207B918E2B2F54F97B9D47 /* Helpers */,
 			);
 			path = OperationCenterTests;
 			sourceTree = "<group>";
@@ -177,10 +183,20 @@
 			path = ../../Classes;
 			sourceTree = "<group>";
 		};
+		E4207B918E2B2F54F97B9D47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E42074F1F0985FC7C93E2A61 /* TSTLazyPropertiesOperation.m */,
+				E4207696EC2057DC04B393F1 /* TSTLazyPropertiesOperation.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E4207EB870A556C9A75B50EA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
 				E4207E4C4FEFE400392C485B /* EEEOperationCenterSpec.m */,
+				E4207ED03F84384F64874B57 /* EEEOperationSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -359,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4207C44BF7FC1294B417F65 /* EEEOperationCenterSpec.m in Sources */,
+				E42075D269D1D7D254EC30D4 /* EEEOperationSpec.m in Sources */,
+				E4207C07FFB4E89C4B59C63C /* TSTLazyPropertiesOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
