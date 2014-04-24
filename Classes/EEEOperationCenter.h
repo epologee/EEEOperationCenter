@@ -1,5 +1,8 @@
 #import <Foundation/Foundation.h>
 
+#define EEEPrepareBlockSelf() __weak __typeof__(self) __weakSelf = self
+#define EEEUseBlockSelf() __typeof__(__weakSelf) __weak blockSelf = __weakSelf
+
 @class EEEInjector;
 @class EEEOperation;
 
