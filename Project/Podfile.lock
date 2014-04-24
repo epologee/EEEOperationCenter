@@ -1,5 +1,5 @@
 PODS:
-  - EEEInjector (0.2.0)
+  - EEEInjector (0.2.1)
   - Kiwi/ARC (2.2.4)
   - Kiwi/NonARC (2.2.4)
   - Kiwi/XCTest (2.2.4):
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - Kiwi/XCTest
 
 SPEC CHECKSUMS:
-  EEEInjector: ccfe65b4ee577c6bd650f8d74ae0c29fe1254053
+  EEEInjector: 5e832cf373a12362d819247366090cdaae3a7ffc
   Kiwi: d60d7498b640a16f58b01925fc3c8d7c4d809f66
 
 COCOAPODS: 0.32.1
