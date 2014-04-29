@@ -13,7 +13,7 @@ SPEC_BEGIN(EEEOperationSpec)
             describe(@"Lazily injected properties", ^{
                 it(@"injects the fox, but not the dog", ^{
                     NSString *fox = @"The quick brown fox that jumps";
-                    [[injector mapClass:[NSString class] withIdentifier:@"theQuickBrownFox" overwriteExisting:YES] toObject:fox];
+                    injector.mapClassWithIdentifier([NSString class], @"theQuickBrownFox").toObject(fox);
 
                     TSTLazyPropertiesOperation *sut = [[TSTLazyPropertiesOperation alloc] init];
                     [[sut.theQuickBrownFox should] equal:fox];
