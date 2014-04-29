@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EEEOperationCenter"
-  s.version          = "0.2.1"
+  s.version          = "1.0.0"
   s.summary          = "Say 'no' to God-classes, chop them up with the operation center"
   s.homepage         = "https://github.com/epologee/EEEOperationCenter"
   s.license          = 'Unlicense'
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/*.{h,m}'
   s.frameworks = 'Foundation'
-  s.dependency 'EEEInjector', '~> 0.2'
+  s.dependency 'EEEInjector', '~> 1.0'
 end
