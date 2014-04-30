@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EEEOperationCenter"
-  s.version          = "1.0.0.b1"
+  s.version          = "1.0.0"
   s.summary          = "Say 'no' to God-classes, chop them up with the operation center"
   s.homepage         = "https://github.com/epologee/EEEOperationCenter"
   s.license          = 'Unlicense'
