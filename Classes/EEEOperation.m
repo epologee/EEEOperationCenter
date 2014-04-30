@@ -43,7 +43,6 @@
 
 - (void)main
 {
-    [self.injector injectPropertiesIntoObject:self];
     [self execute];
 }
 

@@ -1,0 +1,1 @@
+xctool -workspace OperationCenter.xcworkspace -scheme OperationCenterTests test -sdk iphonesimulator7.0
