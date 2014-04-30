@@ -21,10 +21,14 @@
 
 - (void)setupBlocksWithRetainCycle:(void (^)())innerBlock
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+    // This block deliberately causes a retain cycle
     self.blockExecutingBlock = ^BOOL {
-        if (innerBlock) innerBlock(); // this causes a retain cycle
+        if (innerBlock) innerBlock();
         return self != nil;
     };
+#pragma clang diagnostic pop
 }
 
 - (void)setupBlocksWithWeakSelfOnly:(void (^)())innerBlock
