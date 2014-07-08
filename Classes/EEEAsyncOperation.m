@@ -16,6 +16,10 @@
 NSTimeInterval const EEENever = 0;
 
 @implementation EEEAsyncOperation
+{
+    BOOL _executing;
+    BOOL _finished;
+}
 
 - (id)initWithFeedback:(EEEFeedbackBlock)feedbackBlock
 {
