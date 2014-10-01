@@ -1,7 +1,7 @@
 #import <Kiwi/Kiwi.h>
+#import "EEEInjector.h"
 #import "EEEOperationCenter.h"
 #import "EEEOperation.h"
-#import "TSTBlockRetainer.h"
 
 SPEC_BEGIN(EEEOperationCenterSpec)
 

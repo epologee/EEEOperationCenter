@@ -1,4 +1,5 @@
 #import <Kiwi/Kiwi.h>
+#import "EEEInjector.h"
 #import "TSTLazyPropertiesOperation.h"
 
 SPEC_BEGIN(EEEOperationSpec)
