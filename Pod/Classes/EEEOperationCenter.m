@@ -88,7 +88,7 @@ static EEEOperationCenter *_currentOperationCenter = nil;
     return operation;
 }
 
-- (id)inlineOperation:(EEEOperation *)operation withTimeout:(NSTimeInterval)seconds
+- (id)operateInline:(EEEOperation *)operation withTimeout:(NSTimeInterval)seconds
 {
     operation.injector = self.injector;
     operation.isInline = YES;

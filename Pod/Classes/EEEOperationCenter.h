@@ -20,6 +20,6 @@
 
 - (id)queueOperation:(EEEOperation *)operation;
 
-- (id)inlineOperation:(EEEOperation *)operation withTimeout:(NSTimeInterval)seconds;
+- (id)operateInline:(EEEOperation *)operation withTimeout:(NSTimeInterval)seconds;
 
 @end

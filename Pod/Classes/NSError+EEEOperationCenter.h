@@ -1,6 +1,10 @@
 #import <Foundation/Foundation.h>
 
-#define EEE_OPERATION_CENTER_ERROR_DOMAIN @"EEE_OPERATION_CENTER_ERROR_DOMAIN"
+
+extern NSString *const EEEOperationCenterErrorDomain;
+
+__attribute__((deprecated))
+extern NSString *const EEE_OPERATION_CENTER_ERROR_DOMAIN;
 
 typedef enum
 {

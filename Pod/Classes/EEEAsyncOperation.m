@@ -28,6 +28,17 @@ NSTimeInterval const EEENever = 0;
     if (self)
     {
         self.feedbackBlock = feedbackBlock;
+    }
+
+    return self;
+}
+
+- (id)init
+{
+    self = [super init];
+
+    if (self)
+    {
         self.requiresMainThread = NO;
 
         __strong EEEAsyncOperation *dereferencedSelf = self;
@@ -43,13 +54,15 @@ NSTimeInterval const EEENever = 0;
 
         self.timeout = 60;
     }
+
     return self;
 }
 
-- (id)init
+- (instancetype)enqueueWithFeedback:(EEEFeedbackBlock)feedbackBlock
 {
-    self = [self initWithFeedback:nil];
-    return self;
+    self.feedbackBlock = feedbackBlock;
+
+    return (EEEAsyncOperation *) [super enqueue];
 }
 
 - (BOOL)isAsynchronous
@@ -109,9 +122,14 @@ NSTimeInterval const EEENever = 0;
 {
     eee_returnAfterDispatchIfCancelled;
 
+    [self main];
+}
+
+- (void)main
+{
     self.executing = YES;
 
-    [self main];
+    [super main];
 }
 
 - (void)cancel

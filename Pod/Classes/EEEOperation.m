@@ -1,4 +1,3 @@
-#import "EEEInjector.h"
 #import "EEEOperation.h"
 #import "EEEOperationCenter.h"
 #import "NSObject+EEELazyInjection.h"
@@ -13,16 +12,21 @@
 - (id)init
 {
     self = [super init];
-    
+
     if (self)
     {
         self.requiresMainThread = YES;
     }
-    
+
     return self;
 }
 
 - (instancetype)queue
+{
+    return [self enqueue];
+}
+
+- (instancetype)enqueue
 {
     NSParameterAssert([EEEOperationCenter currentOperationCenter]);
     [[EEEOperationCenter currentOperationCenter] queueOperation:self];
@@ -37,7 +41,7 @@
 - (instancetype)operate
 {
     NSParameterAssert([EEEOperationCenter currentOperationCenter]);
-    [[EEEOperationCenter currentOperationCenter] inlineOperation:self withTimeout:0];
+    [[EEEOperationCenter currentOperationCenter] operateInline:self withTimeout:0];
     return self;
 }
 
