@@ -4,8 +4,8 @@
 
 @interface EEEAsyncOperation ()
 
-@property(nonatomic, getter=isFinished) BOOL finished;
-@property(nonatomic, getter=isExecuting) BOOL executing;
+@property(readwrite, getter=isFinished) BOOL finished;
+@property(readwrite, getter=isExecuting) BOOL executing;
 @property(nonatomic, strong) NSTimer *timeoutTimer;
 
 @property(nonatomic, strong) void (^defaultSuccessBlock)(id);
@@ -52,9 +52,14 @@ NSTimeInterval const EEENever = 0;
     return self;
 }
 
-- (BOOL)isConcurrent
+- (BOOL)isAsynchronous
 {
     return !self.requiresMainThread;
+}
+
+- (BOOL)isExecuting
+{
+    return _executing;
 }
 
 - (void)setExecuting:(BOOL)isExecuting
@@ -65,9 +70,7 @@ NSTimeInterval const EEENever = 0;
     }
 
     [self willChangeValueForKey:@"isExecuting"];
-
     _executing = isExecuting;
-
     [self didChangeValueForKey:@"isExecuting"];
 }
 
@@ -75,6 +78,11 @@ NSTimeInterval const EEENever = 0;
 {
     self.timeoutTimer = nil;
     [self cancel];
+}
+
+- (BOOL)isFinished
+{
+    return _finished;
 }
 
 - (void)setFinished:(BOOL)isFinished
@@ -86,16 +94,14 @@ NSTimeInterval const EEENever = 0;
     }
 
     [self willChangeValueForKey:@"isFinished"];
-
     _finished = isFinished;
-
     [self didChangeValueForKey:@"isFinished"];
 }
 
 - (instancetype)operate
 {
     NSParameterAssert([EEEOperationCenter currentOperationCenter]);
-    [[EEEOperationCenter currentOperationCenter] inlineOperation:self withTimeout:self.timeout];
+    [[EEEOperationCenter currentOperationCenter] operateInline:self withTimeout:self.timeout];
     return self;
 }
 
