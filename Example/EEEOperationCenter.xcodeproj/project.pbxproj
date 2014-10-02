@@ -27,6 +27,9 @@
 		95859EE719DBE895008F0E23 /* EEEOperationCenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 95859EE219DBE895008F0E23 /* EEEOperationCenterSpec.m */; };
 		95859EE819DBE895008F0E23 /* EEEOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 95859EE319DBE895008F0E23 /* EEEOperationSpec.m */; };
 		95859EE919DBE895008F0E23 /* TSTBlockRetainerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 95859EE419DBE895008F0E23 /* TSTBlockRetainerSpec.m */; };
+		E4207217F2673840F62392C0 /* TSTAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207D1AE2DC83CEC81F9075 /* TSTAsyncOperation.m */; };
+		E4207218C4F180197DB4177F /* KWSpec+OperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E42074548C7C543D184E952B /* KWSpec+OperationCenter.m */; };
+		E42075F7D6E1B2FF1F1EE600 /* TSTAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420712DD3E67071B12C7BEF /* TSTAsyncOperationSpec.m */; };
 		E8448B725B8C7EE260959AF8 /* libPods-EEEOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1926E78592CC1311A8D1354 /* libPods-EEEOperationCenter.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,11 @@
 		C0BF97C0D993ED08534537B6 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CEFD2D11E1476BC5AD3749B5 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1926E78592CC1311A8D1354 /* libPods-EEEOperationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EEEOperationCenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4207044F8FE48F46FDB2A32 /* KWSpec+OperationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KWSpec+OperationCenter.h"; sourceTree = "<group>"; };
+		E420712DD3E67071B12C7BEF /* TSTAsyncOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTAsyncOperationSpec.m; sourceTree = "<group>"; };
+		E42074548C7C543D184E952B /* KWSpec+OperationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KWSpec+OperationCenter.m"; sourceTree = "<group>"; };
+		E4207D1AE2DC83CEC81F9075 /* TSTAsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTAsyncOperation.m; sourceTree = "<group>"; };
+		E4207DDD0EB33513A6FAC296 /* TSTAsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTAsyncOperation.h; sourceTree = "<group>"; };
 		F75A1168BAC82366795138E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +210,10 @@
 				95859EDE19DBE895008F0E23 /* TSTBlockRetainer.m */,
 				95859EDF19DBE895008F0E23 /* TSTLazyPropertiesOperation.h */,
 				95859EE019DBE895008F0E23 /* TSTLazyPropertiesOperation.m */,
+				E4207D1AE2DC83CEC81F9075 /* TSTAsyncOperation.m */,
+				E4207DDD0EB33513A6FAC296 /* TSTAsyncOperation.h */,
+				E42074548C7C543D184E952B /* KWSpec+OperationCenter.m */,
+				E4207044F8FE48F46FDB2A32 /* KWSpec+OperationCenter.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 				95859EE219DBE895008F0E23 /* EEEOperationCenterSpec.m */,
 				95859EE319DBE895008F0E23 /* EEEOperationSpec.m */,
 				95859EE419DBE895008F0E23 /* TSTBlockRetainerSpec.m */,
+				E420712DD3E67071B12C7BEF /* TSTAsyncOperationSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -410,6 +423,9 @@
 				95859EE519DBE895008F0E23 /* TSTBlockRetainer.m in Sources */,
 				95859EE919DBE895008F0E23 /* TSTBlockRetainerSpec.m in Sources */,
 				95859EE719DBE895008F0E23 /* EEEOperationCenterSpec.m in Sources */,
+				E4207217F2673840F62392C0 /* TSTAsyncOperation.m in Sources */,
+				E42075F7D6E1B2FF1F1EE600 /* TSTAsyncOperationSpec.m in Sources */,
+				E4207218C4F180197DB4177F /* KWSpec+OperationCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
