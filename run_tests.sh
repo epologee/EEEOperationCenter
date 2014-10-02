@@ -1,1 +1,1 @@
-xctool -workspace OperationCenter.xcworkspace -scheme OperationCenterTests test -sdk iphonesimulator7.0
+xctool -workspace Example/EEEOperationCenter.xcworkspace -scheme EEEOperationCenter test -sdk iphonesimulator7.0
