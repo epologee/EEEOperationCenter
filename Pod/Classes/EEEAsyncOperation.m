@@ -23,7 +23,7 @@ NSTimeInterval const EEENever = 0;
 
 - (id)initWithFeedback:(EEEFeedbackBlock)feedbackBlock
 {
-    self = [super init];
+    self = [self init];
 
     if (self)
     {

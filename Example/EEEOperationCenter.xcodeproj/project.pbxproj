@@ -30,6 +30,7 @@
 		E4207217F2673840F62392C0 /* TSTAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207D1AE2DC83CEC81F9075 /* TSTAsyncOperation.m */; };
 		E4207218C4F180197DB4177F /* KWSpec+OperationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E42074548C7C543D184E952B /* KWSpec+OperationCenter.m */; };
 		E42075F7D6E1B2FF1F1EE600 /* TSTAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E420712DD3E67071B12C7BEF /* TSTAsyncOperationSpec.m */; };
+		E42077F8BBA1C231EA7792E1 /* EEEAsyncOperationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4207E6F8FC5ADEA98169CED /* EEEAsyncOperationSpec.m */; };
 		E8448B725B8C7EE260959AF8 /* libPods-EEEOperationCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1926E78592CC1311A8D1354 /* libPods-EEEOperationCenter.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		E42074548C7C543D184E952B /* KWSpec+OperationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KWSpec+OperationCenter.m"; sourceTree = "<group>"; };
 		E4207D1AE2DC83CEC81F9075 /* TSTAsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTAsyncOperation.m; sourceTree = "<group>"; };
 		E4207DDD0EB33513A6FAC296 /* TSTAsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTAsyncOperation.h; sourceTree = "<group>"; };
+		E4207E6F8FC5ADEA98169CED /* EEEAsyncOperationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEEAsyncOperationSpec.m; sourceTree = "<group>"; };
 		F75A1168BAC82366795138E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +227,7 @@
 				95859EE319DBE895008F0E23 /* EEEOperationSpec.m */,
 				95859EE419DBE895008F0E23 /* TSTBlockRetainerSpec.m */,
 				E420712DD3E67071B12C7BEF /* TSTAsyncOperationSpec.m */,
+				E4207E6F8FC5ADEA98169CED /* EEEAsyncOperationSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				E4207217F2673840F62392C0 /* TSTAsyncOperation.m in Sources */,
 				E42075F7D6E1B2FF1F1EE600 /* TSTAsyncOperationSpec.m in Sources */,
 				E4207218C4F180197DB4177F /* KWSpec+OperationCenter.m in Sources */,
+				E42077F8BBA1C231EA7792E1 /* EEEAsyncOperationSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
