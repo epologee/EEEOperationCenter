@@ -1,0 +1,7 @@
+target 'EEEOperationCenter', :exclusive => true do
+  pod "EEEOperationCenter", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod 'Kiwi'
+end
